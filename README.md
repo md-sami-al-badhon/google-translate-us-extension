@@ -1,4 +1,4 @@
-# Use Google Translate with an American accent!
+# Use Google Translate Extension with an American accent!
 
 This browser extension allows you to select text on any webpage, see the
 translation, and hear the pronunciation in **American English** instead of the
