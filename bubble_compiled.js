@@ -52525,7 +52525,7 @@
   }
   function module$contents$gtx$utils_getTranslateUrl(a, b, c, d) {
     return (
-      'https://translate.google.com/?source=' +
+      'https://translate.google.us/?source=' +
       d +
       '#' +
       a +
@@ -52537,7 +52537,7 @@
   }
   function module$contents$gtx$utils_getImageTranslateUrl(a, b, c, d) {
     return (
-      'http://translate.google.com/translate?sl=' +
+      'http://translate.google.us/translate?sl=' +
       a +
       '&tl=' +
       b +
@@ -74294,18 +74294,16 @@
   goog.ui.NativeButtonRenderer.prototype.getAriaRole = function () {};
   goog.ui.NativeButtonRenderer.prototype.createDom = function (a) {
     this.setUpNativeButton_(a);
-    return a
-      .getDomHelper()
-      .createDom(
-        goog.dom.TagName.BUTTON,
-        {
-          class: this.getClassNames(a).join(' '),
-          disabled: !a.isEnabled(),
-          title: a.getTooltip() || '',
-          value: a.getValue() || '',
-        },
-        a.getCaption() || ''
-      );
+    return a.getDomHelper().createDom(
+      goog.dom.TagName.BUTTON,
+      {
+        class: this.getClassNames(a).join(' '),
+        disabled: !a.isEnabled(),
+        title: a.getTooltip() || '',
+        value: a.getValue() || '',
+      },
+      a.getCaption() || ''
+    );
   };
   goog.ui.NativeButtonRenderer.prototype.canDecorate = function (a) {
     return (
